@@ -23,13 +23,14 @@ class NotificationScreen extends React.Component {
     }
   }
 
-Route = {
-    Home: { screen: HomeScreen },
-    Notification: { screen: NotificationScreen }
-}
+// Route = {
+//     Home: { screen: HomeScreen },
+//     Notification: { screen: NotificationScreen }
+// }
 
 const AppNavigator = createDrawerNavigator({
-    Route
+  Home: { screen: HomeScreen },
+  Notification: { screen: NotificationScreen }
 }, {
     drawerWidth:300,
     drawerPosition:'left',
